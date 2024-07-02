@@ -1,0 +1,20 @@
+
+body{
+  background-color: aquamarine;
+}
+
+.app {
+  display: flex;
+}
+
+.header {
+  background-color: rgb(27, 227, 227);
+}
+
+.main {
+  background-color: rgb(41, 172, 172);
+}
+
+.footer {
+  background-color: rgb(52, 147, 147);
+}
