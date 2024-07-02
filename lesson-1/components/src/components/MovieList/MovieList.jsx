@@ -1,20 +1,15 @@
-import React from 'react'
-import styles from "./movie-list.modules.css"
-
-
+import React from "react";
+import styles from "./movie-list.modules.css";
+import MovieListItem from "./MovieListItem";
 
 const MovieList = ({ title, items }) => {
-  const elements = items.map((item) => 
-    <li key={item.id}>{item.title},{ item.year}</li>
-  )
+  const elements = items.map((item) => <MovieListItem key={item.id} title={item.title} year={item.year} src={item.src} alt={item.alt} />);
   return (
     <>
       <h3>{title}</h3>
-      <ul className={styles.movieList}>
-{elements}
-      </ul>
+      <ul className={styles.movieList}>{elements}</ul>
     </>
   );
-}
+};
 
-export default MovieList
+export default MovieList;

@@ -1,6 +1,6 @@
 // import React from 'react';
 
-const PhoneList = ({title, contacts}) => {
+const PhoneList = ({title, contacts=[]}) => {
 
     const elements = contacts.map((contact) => (
       <li key={contact.id}>
