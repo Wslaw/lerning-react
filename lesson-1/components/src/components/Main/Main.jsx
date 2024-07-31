@@ -3,12 +3,13 @@ import MovieList from "../MovieList/MovieList";
 import items from "../../data/movieList.json";
 import contacts from "../../data/phoneList.json";
 import PhoneList from "../PhoneList/PhoneList.jsx";
+import styles from "./main.module.css"
 
 const Main = () => {
   return (
-    <main className="main">
-      <h2>Page description</h2>
-      <p>page description</p>
+    <main className={styles.main}>
+      <h2>Main description</h2>
+      <p>main description</p>
       <Button type="button" text="Order me" />
       <Button type="submit" text="Send" />
       <MovieList title="Best movies 2024" items={items} />
